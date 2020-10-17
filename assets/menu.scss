@@ -1,0 +1,175 @@
+$fontJp:"ＭＳ 明朝",serif;
+$border :10px rgb(102, 87, 0) solid;
+
+
+
+body {
+    color:white;
+    background-color: black;
+    font-family: $fontJp;
+    font-size: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+}
+.header {
+
+    border-bottom:$border;
+    &__wrapper{
+        
+        width:90%;
+        // min-height: 100px;
+        margin:30px auto  0 auto;
+        & img {
+            height:10vh;
+            
+        }
+        &__right{
+            
+            text-align: right;
+            
+            bottom:10px;
+            right:30px;
+            & a{
+                display: inline-block;
+                color: white;
+                line-height: 60px;
+                margin: 0 0px;
+                text-decoration: none;
+                
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.5);
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+
+}
+
+
+.top {
+    position: relative;
+    background:#ddd url(./img/menu_mainphoto.jpg) no-repeat center center;
+    background-size:cover;
+    min-height: 300px;
+    color:white;
+    border-bottom: $border;
+    &__title{
+        position: absolute;
+        bottom:30px;
+        right:30px;
+        background-color: rgba(0,0,0,0.3);
+        font-weight: 900;
+        font-size: 80%;
+
+    }
+}
+
+.menu{
+    width:70%;
+    margin:100px auto 0 auto;
+    & table{
+        margin-left:20%;
+        font-size: 20px;
+        line-height: 50px;
+        margin-top:80px;
+    }
+    & td{
+        text-align: right;
+        width: 25%;
+        border-bottom: ridge rgb(102, 87, 0) 4px ;
+    }
+    & th{
+        width: 25%;
+        border-bottom: dotted rgb(102, 87, 0) 4px ;
+    }
+    &__1{
+        margin: 150px 0;
+        position: relative;
+        display: flex;
+        flex-wrap:wrap;
+        &__1{
+            width:40%;
+            margin: 0 20px; 
+        }
+        &__2{
+            width: 40%;
+            position:absolute;
+            right:20px;
+        }
+    }
+    & h5{
+        color: rgb(250, 216, 26) ;
+    }
+}
+
+.footer {
+    border-top: $border;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-height:250px;
+    & a{
+        
+                display: inline-block;
+                color: white;
+                line-height: 60px;
+                margin: 0px 5px;
+                text-decoration: none;
+                font-size: 25px;
+        }
+    & img{
+            max-height: 300px;
+            margin-left: 20%;
+        }
+        &_right_top{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            top:5px;
+            right:100px;
+            margin-right: 5%;
+        }
+        &_right_bottom{
+            text-align: right;
+            position: absolute;
+            width:24%;
+            bottom:40px;
+            right:200px;
+            background-color: rgb(51, 35, 1);
+            padding:20px;
+            padding-left:10px;
+            font-size: 20px;
+        }
+}
+
+
+
+
+// @import "breakpoints/base";
+
+// @media (min-width: 480px) {//スマホを横にした画面
+// @import "breakpoints/480up";
+// }
+
+// @media (min-width: 600px) {
+// @import "breakpoints/600up";
+// }
+
+// @media (min-width: 960px) {//小さいデスクトップやもにた
+// @import "breakpoints/960up";
+// }
+
+// @media (min-width: 1280px) {//通常のディスプレイ
+// @import "breakpoints/1280up";
+// }
+
+// @media (min-resolution: 192dpi)
+//     ,(-webkit-min-device-pixel-ratio: 2) {
+// @import "breakpoints/2x";
+// }
+
+// @media print {
+// @import "breakpoints/print";
+// }
